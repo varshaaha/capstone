@@ -1,0 +1,38 @@
+.custom-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: #6c757d; /* fallback default */
+    transition: background 0.3s ease;
+    display: inline-block;
+  }
+  
+  .custom-btn.srgan {
+    background-color: #6c63ff;
+  }
+  
+  .custom-btn.srgan:hover {
+    background-color: #574ee3;
+  }
+  
+  .custom-btn.pix2pix {
+    background-color: #ff6b6b;
+  }
+  
+  .custom-btn.pix2pix:hover {
+    background-color: #e25555;
+  }
+
+  .custom-btn.detection {
+    background-color: #00b894; 
+  }
+  
+  .custom-btn.detection:hover {
+    background-color: #00997a;
+  }
+  
+  
+  

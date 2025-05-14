@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    background: rgba(240, 240, 240, 0.7);
+    color: #333;
+    font-family: 'Space Grotesk', sans-serif;
+    position: relative;
+    z-index: 2;
+    margin-left: 1rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #6c63ff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .navbar-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .navbar-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    /* background: #2EF4D0; */
+    background: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(46, 244, 208, 0.4);
+  }
+  
+  .navbar-menu li a:hover {
+    color: #000;
+    text-shadow: 0 0 10px rgba(229, 250, 246, 0.1);
+    background: rgba(229, 250, 246, 0.1);
+  }
+  
+  .navbar-menu li a:hover::after {
+    width: 80%;
+  }
+  
+  .navbar-menu li a.active {
+    color: #000;
+    text-shadow: 0 0 10px rgba(229, 250, 246, 0.1);
+    background: rgba(229, 250, 246, 0.1);
+
+  }
+  
+  .navbar-menu li a.active::after {
+    width: 80%;
+    /* background: #2EF4D0; */
+    background: white;
+    box-shadow: 0 0 10px rgba(229, 250, 246, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+      margin-left: 0;
+      border-radius: 8px;
+    }
+    
+    .navbar-menu {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+    
+    .navbar-menu li a {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
